@@ -4,15 +4,24 @@ export const MAINMENUDATA = [
         path: '/'
     },
     {
-        name: 'About',
+        name: 'About Me',
         path: '/About'
     },
     {
-        name: 'Contact',
-        path: '/Contact'
+        name: 'Education',
+        path: '/Education'
     },
     {
-        name: 'blah',
-        path: '/blah'
-    }
+        name: 'Skills',
+        path: '/Skills'
+    },
+    {
+        name: 'Projects',
+        path: '/Projects'
+    },
+    {
+        name: 'Contact Me',
+        path: '/Contact'
+    },
+    
 ]

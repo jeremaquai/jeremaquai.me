@@ -9,7 +9,7 @@ export default function Header() {
     return (
         <header>
             <Link to={PATHS.home} >
-                <h1>Header Text</h1>
+                <h1>Jeremaquai.me</h1>
             </Link>
                 
         </header>

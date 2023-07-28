@@ -1,0 +1,26 @@
+.AboutMePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    padding: 2%;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+p {
+    padding: 2%;
+}
+
+.sectionOne {
+    display: flex;
+    flex-direction: row;
+}
+
+.campingPhoto {
+    width: 45%;
+    padding: 2%;
+}

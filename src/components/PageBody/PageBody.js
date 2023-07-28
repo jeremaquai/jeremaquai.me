@@ -9,13 +9,17 @@ import { PATHS } from "../../data/Paths";
 
 import './PageBody.css';
 import HomePage from "../../pages/HomePage/HomePage";
+import AboutMe from "../../pages/AboutMe/AboutMe";
 
 export default function PageBody() {
     return (
         <div className="switch">
             <Switch>
-                <Route path={PATHS.home} >
+                <Route exact path={PATHS.home} >
                     <HomePage />
+                </Route>
+                <Route path={PATHS.about} >
+                    <AboutMe />
                 </Route>
             </Switch>
         </div>
