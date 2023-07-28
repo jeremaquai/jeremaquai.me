@@ -1,0 +1,9 @@
+footer {
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-around;
+    min-height: 10vh;
+    max-height: 10vh;
+    overflow: hidden;
+}

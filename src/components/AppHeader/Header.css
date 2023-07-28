@@ -1,0 +1,14 @@
+header {
+    width: 100 vw;
+    max-height: 15vh;
+    min-height: 15vh;
+    display: flex;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+}
+
+a h1 {
+    color: white;
+}

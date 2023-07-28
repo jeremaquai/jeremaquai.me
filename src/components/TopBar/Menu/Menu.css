@@ -1,0 +1,14 @@
+.mobileMenuItem {
+    background-color: white;
+    margin: 2%;
+    max-width: 45%;
+    min-width: 15%;
+}
+.mobileMenu {
+    max-width: 100vw;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

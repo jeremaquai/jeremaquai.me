@@ -1,0 +1,16 @@
+.App {
+  text-align: center;
+}
+
+.SideBarAndPageBody {
+  max-height: 75vh;
+  min-height: 75vh;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.mobileApp {
+  display: flex;
+  flex-direction: column;
+}
