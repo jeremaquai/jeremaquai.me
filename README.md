@@ -226,4 +226,4 @@ Project Link: [https://github.com/jeremaquai/ReactLeftSideBarTemplate](https://g
 [license-url]: https://github.com/jeremaquai/ReactLeftSideBarTemplate/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/jeremiah-sparks-0ba36a239
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: ./src/images/jeremaquaiDotMeFirstScreenShot.png

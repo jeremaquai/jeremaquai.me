@@ -1,0 +1,11 @@
+.EducationPage {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}

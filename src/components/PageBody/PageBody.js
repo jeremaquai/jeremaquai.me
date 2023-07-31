@@ -10,6 +10,7 @@ import { PATHS } from "../../data/Paths";
 import './PageBody.css';
 import HomePage from "../../pages/HomePage/HomePage";
 import AboutMe from "../../pages/AboutMe/AboutMe";
+import Education from "../../pages/Education/Education";
 
 export default function PageBody() {
     return (
@@ -20,6 +21,9 @@ export default function PageBody() {
                 </Route>
                 <Route path={PATHS.about} >
                     <AboutMe />
+                </Route>
+                <Route path={PATHS.education} >
+                    <Education />
                 </Route>
             </Switch>
         </div>
