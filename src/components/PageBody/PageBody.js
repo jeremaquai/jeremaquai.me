@@ -12,6 +12,7 @@ import HomePage from "../../pages/HomePage/HomePage";
 import AboutMe from "../../pages/AboutMe/AboutMe";
 import Education from "../../pages/Education/Education";
 import Skills from "../../pages/Skills/Skills";
+import ProgramPage from "../../pages/ProgramPage/ProgramPage";
 
 export default function PageBody() {
     return (
@@ -23,11 +24,11 @@ export default function PageBody() {
                 <Route path={PATHS.about} >
                     <AboutMe />
                 </Route>
-                <Route path={PATHS.education} >
+                <Route exact path={PATHS.education} >
                     <Education />
                 </Route>
                 <Route path={PATHS.educationProgram} >
-
+                    <ProgramPage />
                 </Route>
                 <Route path={PATHS.skills} >
                     <Skills />
