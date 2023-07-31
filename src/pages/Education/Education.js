@@ -8,6 +8,7 @@ export default function Education() {
     return (
         <div className="EducationPage" >
             <h2>Education</h2>
+            <img alt="" src="https://github.com/jeremaquai/jeremaquai.me/blob/main/src/images/codecademy.svg" />
             {EDUCATIONDATA.map((program, index) => {
                 return (
                     <NavLink key={index} to={program.path} >

@@ -7,13 +7,13 @@ export const EDUCATIONDATA = [
         startDate: '',
         completionDate: '1999',
         path: '/Education/LHS',
-        logo: 'https://github.com/jeremaquai/jeremaquai.me/blob/main/src/images/loganville-high-image.pngo',
+        logo: {loganvilleLogo},
     },
     {
         program: 'Codecademy',
         startDate: 'April 2022',
         completionDate: '',
         path: '/Education/Codecademy',
-        logo: {codecademyLogo},
+        logo: 'https://github.com/jeremaquai/jeremaquai.me/blob/main/src/images/codecademy.svg',
     }
 ];

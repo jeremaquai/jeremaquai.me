@@ -6,7 +6,8 @@ export default function ProgramCard(props) {
         <div className="programCard" >
             <h3>{props.program}</h3>
             <h4>Start Date : {props.startDate}</h4>
-            <img alt="" src={props.logo} />
+            <h4>completion Date: {props.completionDate} </h4>
+            <img className="programLogo" alt="" src={props.logo} />
         </div>
     );
 }

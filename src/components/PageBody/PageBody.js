@@ -25,6 +25,9 @@ export default function PageBody() {
                 <Route path={PATHS.education} >
                     <Education />
                 </Route>
+                <Route path={PATHS.educationProgram} >
+
+                </Route>
             </Switch>
         </div>
     );
