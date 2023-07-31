@@ -11,6 +11,7 @@ import './PageBody.css';
 import HomePage from "../../pages/HomePage/HomePage";
 import AboutMe from "../../pages/AboutMe/AboutMe";
 import Education from "../../pages/Education/Education";
+import Skills from "../../pages/Skills/Skills";
 
 export default function PageBody() {
     return (
@@ -27,6 +28,9 @@ export default function PageBody() {
                 </Route>
                 <Route path={PATHS.educationProgram} >
 
+                </Route>
+                <Route path={PATHS.skills} >
+                    <Skills />
                 </Route>
             </Switch>
         </div>

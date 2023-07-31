@@ -1,19 +1,28 @@
-import loganvilleLogo from '../images/loganville-high-image.png';
-import codecademyLogo from '../images/codecademy.svg';
+import CodecademyLogo from "../components/ImageComponents/CodecademyLogo";
+import CodingCover from "../components/ImageComponents/CodingCover";
+import LoganvilleLogo from "../components/ImageComponents/LoganvilleLogo"
+
 
 export const EDUCATIONDATA = [
     {
         program: 'Loganville High School',
-        startDate: '',
+        startDate: '1995',
         completionDate: '1999',
         path: '/Education/LHS',
-        logo: {loganvilleLogo},
+        image:  <LoganvilleLogo />,
     },
     {
         program: 'Codecademy',
         startDate: 'April 2022',
-        completionDate: '',
+        completionDate: 'Currently Attending',
         path: '/Education/Codecademy',
-        logo: 'https://github.com/jeremaquai/jeremaquai.me/blob/main/src/images/codecademy.svg',
+        image: <CodecademyLogo />,
+    },
+    {
+        program:'Coding With Minecraft by Al Sweigart',
+        startDate: 'Mar 2023',
+        completionDate: 'Currently exploring slowly in my free time',
+        path: '/Education/CWMinecraft',
+        image: <CodingCover />,
     }
 ];

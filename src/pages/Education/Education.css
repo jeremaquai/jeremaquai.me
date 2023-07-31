@@ -1,9 +1,19 @@
 .EducationPage {
     min-width: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-content: center;
     text-align: center;
+}
+
+.cardsDiv {
+    display: flex;
+    min-width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
 }
 
 h2 {

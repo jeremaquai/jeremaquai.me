@@ -1,3 +1,15 @@
-.programLogo {
-    width: 45%;
+.programCard {
+    max-width: 100%;
+    border: 1px solid black;
+    padding: 2%;
+    margin: 3%;
+}
+
+.loganvilleLogo,
+.codecademyLogo {
+    max-width: 100%;
+}
+
+.CodingCover {
+    max-width: 50%;
 }
