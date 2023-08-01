@@ -1,0 +1,12 @@
+.skillsDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cardDiv {
+    border: 1px solid black;
+    text-align: center;
+    padding: 1%;
+    margin: 2%;
+}

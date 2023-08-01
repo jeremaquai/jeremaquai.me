@@ -2,7 +2,7 @@ import CssLogo from "../components/ImageComponents/CssLogo";
 import HtmlLogo from "../components/ImageComponents/HtmlLogo";
 import PythonLogo from "../components/ImageComponents/PythonLogo";
 
-export default SKILLSDATA = [
+export const SKILLSDATA = [
     {
         image: <HtmlLogo />,
         name: 'HTML 5',
