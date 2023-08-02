@@ -1,12 +1,17 @@
 .programCard {
     max-width: 100%;
+    min-width: fit-content;
+    /* min-width: 200px; */
     border: 1px solid black;
     padding: 2%;
     margin: 3%;
 }
 
-.loganvilleLogo,
 .codecademyLogo {
+    min-width: 100%;
+}
+
+.loganvilleLogo {
     max-width: 100%;
 }
 
