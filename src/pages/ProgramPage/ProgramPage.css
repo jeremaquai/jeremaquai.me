@@ -1,4 +1,5 @@
 .programSpecificsPage {
+    align-items: center;
     text-align: center;
     display: flex;
     flex-direction: column ;
@@ -12,5 +13,20 @@
 }
 
 .certifications {
+    display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.commandLineCertificate,
+.chatbotsCertificate,
+.learnCssCertificate {
+    max-width: 100%;
+}
+
+.certification {
+    max-width: 20%;
+    border: 1px solid black;
+    margin: 1%;
 }

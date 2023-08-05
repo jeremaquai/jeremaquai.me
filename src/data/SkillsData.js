@@ -1,20 +1,18 @@
-import CssLogo from "../components/ImageComponents/CssLogo";
-import HtmlLogo from "../components/ImageComponents/HtmlLogo";
-import PythonLogo from "../components/ImageComponents/PythonLogo";
+
 
 export const SKILLSDATA = [
     {
-        image: <HtmlLogo />,
+        image: '',
         name: 'HTML 5',
         startDate: 'Since April 2022',
     },
     {
-        image: <CssLogo />,
+        image: '',
         name: 'CSS 3',
         startDate: 'Since April 2022',
     },
     {
-        image: <PythonLogo />,
+        image: '',
         name: 'Python',
         startDate: 'Since May 2022'
     },

@@ -1,7 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import LoganvilleLogo from "../../components/ImageComponents/LoganvilleLogo";
-import CodecademyLogo from "../../components/ImageComponents/CodecademyLogo";
-import CodingCover from "../../components/ImageComponents/CodingCover";
 
 const initialState = {
     programs: [
@@ -10,21 +7,24 @@ const initialState = {
             startDate: '1995',
             completionDate: '1999',
             path: '/Education/LHS',
-            image:  <LoganvilleLogo />,
+            image: 'loganville-high-image.png',
+            imageClassName: 'loganvilleLogo'
         },
         {
             program: 'Codecademy Online Coding Bootcamp',
             startDate: 'April 2022',
             completionDate: 'Currently Attending',
             path: '/Education/Codecademy',
-            image: <CodecademyLogo />,
+            image: 'codecademy.svg',
+            imageClassName: 'codecademyLogo'
         },
         {
             program:'Coding With Minecraft by Al Sweigart',
             startDate: 'Mar 2023',
             completionDate: 'Currently exploring slowly in my free time',
             path: '/Education/CWMinecraft',
-            image: <CodingCover />,
+            image: 'codingWithMinecraft.jpeg',
+            imageClassName: 'CodingCover'
         }
     ],
     selectedProgram: null,
@@ -54,7 +54,7 @@ const initialState = {
             name: 'Codecademy Online Learning System',
             startDate: 'April 2022',
             completionDate: 'Currently Enrolled',
-            image: <CodecademyLogo />,
+            image: '',
             certifications: [
                 {
                     name: 'Learn the Command Line Course',
@@ -110,6 +110,9 @@ const initialState = {
         },
         {
             id: 'CWMinecraft',
+            image: '',
+            name: 'Coding With Minecraft by Al Sweigart',
+            certifications: [],
         }
     ]
 };

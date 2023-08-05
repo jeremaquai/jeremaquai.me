@@ -3,6 +3,7 @@ import './ProgramPage.css';
 import { useParams } from "react-router-dom/cjs/react-router-dom.min";
 import { setSelectedProgram, selectProgramSpecifics, selectSelectedProgramSpecifics } from "../Education/educationSlice";
 import { useDispatch, useSelector } from "react-redux";
+// import CommandLineCertificate from "../../components/ImageComponents/ CommandLineCertificate";
 
 
 export default function ProgramPage() {
@@ -30,9 +31,16 @@ export default function ProgramPage() {
             <h4>Completion Date: {programSpecifics.completionDate} </h4>
             <div className="certifications" >
                 { programSpecifics.certifications.map((certification, index) => {
-                    return 
+                    return (
+                        <div className="certification" >
+                            {certification.image}
+                            <h5> {certification.name} </h5>
+                            <h6> {certification.completionDate} </h6>
+                        </div>
+                    );
                 }) }
             </div>
+            
         </div>
     );
 

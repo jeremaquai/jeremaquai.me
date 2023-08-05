@@ -29,7 +29,8 @@ export default function Education() {
                             program={program.program}
                             startDate={program.startDate}
                             completionDate={program.completionDate}
-                            image={ program.image  }   />
+                            image={program.image}
+                            imageClassName={program.imageClassName}   />
                         </NavLink>
                         
                     );

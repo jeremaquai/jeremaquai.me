@@ -1,8 +1,5 @@
 import React from "react";
 import './AboutMe.css';
-import campingPhoto from '../../images/IMG_0872.png';
-import monsterJamPhotoOne from '../../images/monsterJamPhotoOne.jpeg';
-import dynamitePhoto from '../../images/dynamitePhoto.jpeg';
 
 import { useSelector } from "react-redux";
 import { selectMobileLayout } from "../../app/viewportSlice";
@@ -22,16 +19,16 @@ export default function AboutMe() {
                                 <p>
                                     Hello and welcome to my corner of the internet.  My name is Jeremiah Sparks and I am currently employed as a prep-cook at a local assisted / independent living facility.  In my free time I enjoy spending time with my family camping or going to sporting events.  I spend most of my time though dedicated to trying to better myself and my life through exercise, education, and a possitive attitude towards life.   
                                 </p>
-                                <img className="campingPhoto" src={campingPhoto} alt="" />
+                                <img className="campingPhoto" src={'../../images/IMG_0872.PNG'} alt="" />
                             </div>
                             <div className="sectionTwo" >
-                                <img className="monsterJamPhotoOne" src={monsterJamPhotoOne} alt="" />
+                                <img className="monsterJamPhotoOne" src={'../../images/monsterJamPhotoOne.jpeg'} alt="" />
                                 <p>
                                     In the middle of 2020 I was diagnosed with adult onset diabetes and was faced with a life or death decision, change my lifestyle or be doomed to slowly kill myself with my current lifestyle and eating habits.
                                 </p>
                             </div>
                             <div className="sectionThree" >
-                                <img className="dynamitePhoto" alt="" src={dynamitePhoto} />
+                                <img className="dynamitePhoto" alt="" src={'../../images/dynamitePhoto.jpeg'} />
                             </div>
                         </div>
                 </div>
@@ -45,7 +42,7 @@ export default function AboutMe() {
                     <p>
                         Hello and welcome to my corner of the internet.  My name is Jeremiah Sparks and I am currently employed as a prep-cook at a local assisted / independent living facility.  In my free time I enjoy spending time with my family camping or going to sporting events.  I spend most of my time though dedicated to trying to better myself and my life through exercise, education, and a possitive attitude towards life.   
                     </p>
-                    <img alt="" src={campingPhoto} className="campingPhotoMobile" />
+                    <img alt="" src={'../../images/IMG_0872.PNG'} className="campingPhotoMobile" />
                     <p>
                         In the middle of 2020 I was diagnosed with adult onset diabetes and was faced with a life or death decision, change my lifestyle or be doomed to slowly kill myself with my current lifestyle and eating habits.
                     </p>
