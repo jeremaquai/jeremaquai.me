@@ -4,11 +4,15 @@
     display: flex;
     flex-direction: column ;
     justify-content: space-around;
-    min-width: 100%;
+    min-width: inherit;
     
 }
 
 .codecademyLogo {
+    max-width: 100%;
+}
+
+.loganvilleLogo {
     min-width: 100%;
 }
 
@@ -17,11 +21,11 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    min-width: 100%;
 }
 
-.commandLineCertificate,
-.chatbotsCertificate,
-.learnCssCertificate {
+
+.Certificate {
     max-width: 100%;
 }
 

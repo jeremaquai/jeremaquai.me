@@ -17,7 +17,7 @@ export default function ProgramPage() {
     useEffect(() => {
         dispatch(setSelectedProgram(activeProgram.program));
         dispatch(selectProgramSpecifics(activeProgram.program));
-    }, []);
+    }, [activeProgram.program, dispatch]);
 
     const programSpecifics = useSelector(selectSelectedProgramSpecifics);
     console.log(programSpecifics);
@@ -25,7 +25,8 @@ export default function ProgramPage() {
     return (
         <div className="programSpecificsPage" >
             <h2>Program Specifics</h2>
-            {programSpecifics.image}
+
+            <img className={ programSpecifics.imageClassName } alt={programSpecifics.name + ' Logo'} src={'../../images/' + programSpecifics.image }  />
             <h3> {programSpecifics.name} </h3>
             <h4>Start Date: {programSpecifics.startDate} </h4>
             <h4>Completion Date: {programSpecifics.completionDate} </h4>
@@ -33,7 +34,7 @@ export default function ProgramPage() {
                 { programSpecifics.certifications.map((certification, index) => {
                     return (
                         <div className="certification" >
-                            {certification.image}
+                            <img alt="" className="Certificate" src={ '../../images/' + certification.image } />
                             <h5> {certification.name} </h5>
                             <h6> {certification.completionDate} </h6>
                         </div>

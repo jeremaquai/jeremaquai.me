@@ -24,7 +24,7 @@ const initialState = {
             completionDate: 'Currently exploring slowly in my free time',
             path: '/Education/CWMinecraft',
             image: 'codingWithMinecraft.jpeg',
-            imageClassName: 'CodingCover'
+            imageClassName: 'CodingCover',
         }
     ],
     selectedProgram: null,
@@ -41,6 +41,8 @@ const initialState = {
             name: 'Loganville High School',
             startDate: '1995',
             completionDate: '1999',
+            image: 'loganville-high-image.png',
+            imageClassName: 'loganvilleLogo',
             certifications: [
                 {
                     name: 'High School Diploma, College Prep',
@@ -54,63 +56,65 @@ const initialState = {
             name: 'Codecademy Online Learning System',
             startDate: 'April 2022',
             completionDate: 'Currently Enrolled',
-            image: '',
+            image: 'codecademy.svg',
+            imageClassName: 'codecademyLogo',
             certifications: [
                 {
                     name: 'Learn the Command Line Course',
                     completionDate: 'April 2022',
-                    image: '',
+                    image: 'commandlinecertificate.jpg',
                 },
                 {
                     name: 'Learn CSS Course',
                     completionDate: 'April 2022',
-                    image: '',
+                    image: 'LearnCsscertificate.jpg',
                 },
                 {
                     name: 'Learn HTML Course',
                     completionDate: 'April 2022',
-                    image: '',
+                    image: 'HTMLcertificate1024_1.jpg',
                 },
                 {
                     name: 'Build a  Website with HTML, CSS, and GitHub Pages Skill Path',
                     completionDate: 'April 2022',
-                    image: '',
+                    image: 'buildWebPagesCertificate1024_1.jpg',
                 },
                 {
                     name: 'Learn Git & GitHub Course',
                     completionDate: 'April 2022',
-                    image: '',
+                    image: 'learnGitCertificate-page-001.jpg',
                 },
                 {
                     name: 'Learn Python 3 Course',
                     completionDate: 'May 2022',
-                    image: '',
+                    image: 'pythonThree.jpg',
                 },
                 {
                     name: 'Learn How to Code Course',
                     completionDate: 'June 2022',
-                    image: '',
+                    image: 'learnToCode-page-001.jpg',
                 },
                 {
                     name: 'Code Foundations Skill Path',
                     completionDate: 'June 2022',
-                    image: '',
+                    image: 'codeFoundations.jpg',
                 },
                 {
                     name: 'How to Make a Website with NameCheap Course',
                     completionDate: 'June 2022',
-                    image: '',
+                    image: 'makeWebsiteWithNamecheap.jpg',
                 },
                 {
                     name: 'Build Chatbots with Python Skill Path',
                     completionDate: 'July 2022',
-                    image: '',
+                    image: 'buildChatbots.jpg',
                 },
             ],
         },
         {
             id: 'CWMinecraft',
-            image: '',
+            image: 'codingWithMinecraft.jpeg',
+            imageClassName: 'CodingCover',
             name: 'Coding With Minecraft by Al Sweigart',
             certifications: [],
         }
