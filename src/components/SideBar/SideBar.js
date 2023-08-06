@@ -5,7 +5,7 @@ import Menu from "./Menu/Menu";
 
 export default function SideBar() {
     return (
-        <div className="SideBar">
+        <div role="sidebar" className="SideBar">
             <Menu />
         </div>
     );
