@@ -3,5 +3,11 @@
 }
 
 .skillCard {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     max-width: 100%;
+    align-content: center;
 }
