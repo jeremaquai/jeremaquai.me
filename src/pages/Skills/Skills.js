@@ -5,7 +5,6 @@ import { selectSkills } from "./skillsSlice";
 
 import { useSelector } from "react-redux";
 
-import {SKILLSDATA} from "../../data/SkillsData";
 import SkillCard from "../../components/SkillCard/SkillCard";
 
 export default function Skills() {
