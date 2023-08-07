@@ -16,7 +16,7 @@ export default function Skills() {
             <div className="skillsDiv">
                 {skills.map((skill, index) => {
                     return (
-                        <div className="cardDiv" >
+                        <div className="skillCardDiv" >
                             <SkillCard 
                             image={skill.image}
                             name={skill.name}

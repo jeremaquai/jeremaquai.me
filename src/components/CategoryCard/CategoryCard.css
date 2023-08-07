@@ -1,0 +1,12 @@
+.categoryCard {
+    max-width: 100%;
+    border: 1px solid black;
+    padding: 1%;
+    text-align: center;
+}
+
+.categoryCard ul {
+    font-size: small;
+    list-style: square;
+    text-align: center;
+}

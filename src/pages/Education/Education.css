@@ -7,7 +7,7 @@
     text-align: center;
 }
 
-.cardsDiv {
+.programCardsDiv {
     display: flex;
     min-width: 100%;
     justify-content: space-around;

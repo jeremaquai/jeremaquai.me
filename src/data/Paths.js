@@ -5,6 +5,7 @@ export const PATHS = {
     educationProgram: '/Education/:program',
     skills: '/Skills',
     projects: '/Projects',
+    projectsCategory: '/Projects/:category',
     contact: '/Contact',
 
 }

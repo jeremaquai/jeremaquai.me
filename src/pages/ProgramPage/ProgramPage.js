@@ -1,8 +1,13 @@
 import React, { useEffect } from "react";
 import './ProgramPage.css';
 import { useParams } from "react-router-dom/cjs/react-router-dom.min";
-import { setSelectedProgram, selectProgramSpecifics, selectSelectedProgramSpecifics } from "../Education/educationSlice";
-import { useDispatch, useSelector } from "react-redux";
+import { 
+    selectProgramSpecifics, 
+    selectSelectedProgramSpecifics 
+} from "../Education/educationSlice";
+import { 
+    useDispatch, 
+    useSelector } from "react-redux";
 // import CommandLineCertificate from "../../components/ImageComponents/ CommandLineCertificate";
 
 
@@ -10,12 +15,11 @@ export default function ProgramPage() {
 
     const  activeProgram  = useParams();
 
-    console.log(activeProgram);
+    // console.log(activeProgram);
 
     const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(setSelectedProgram(activeProgram.program));
         dispatch(selectProgramSpecifics(activeProgram.program));
     }, [activeProgram.program, dispatch]);
 
@@ -33,7 +37,7 @@ export default function ProgramPage() {
             <div className="certifications" >
                 { programSpecifics.certifications.map((certification, index) => {
                     return (
-                        <div className="certification" >
+                        <div key={index} className="certification" >
                             <img alt="" className="Certificate" src={ '../../images/' + certification.image } />
                             <h5> {certification.name} </h5>
                             <h6> {certification.completionDate} </h6>

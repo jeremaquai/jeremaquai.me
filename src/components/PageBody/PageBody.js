@@ -14,6 +14,8 @@ import Education from "../../pages/Education/Education";
 import Skills from "../../pages/Skills/Skills";
 import ProgramPage from "../../pages/ProgramPage/ProgramPage";
 import ProjectsPage from "../../pages/ProjectsPage/ProjectsPage";
+import CategoryPage from "../../pages/CategoryPage/CategoryPage";
+
 
 export default function PageBody() {
     return (
@@ -34,8 +36,11 @@ export default function PageBody() {
                 <Route path={PATHS.skills} >
                     <Skills />
                 </Route>
-                <Route path={PATHS.projects} >
+                <Route exact path={PATHS.projects} >
                     <ProjectsPage />
+                </Route>
+                <Route path={PATHS.projectsCategory} >
+                    <CategoryPage />
                 </Route>
             </Switch>
         </div>

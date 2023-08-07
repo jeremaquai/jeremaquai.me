@@ -1,0 +1,12 @@
+.navlinkdiv {
+    max-width: 20%;
+}
+
+.projectsCardsDiv {
+
+    display: flex;
+    min-width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}

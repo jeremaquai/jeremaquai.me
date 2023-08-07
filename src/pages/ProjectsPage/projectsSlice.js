@@ -3,27 +3,9 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
     projectCategories: [
         {
-            name: 'Personal Projects',
-            path: '/Projects/Personal',
-        },
-        {
-            name: 'Professional Projects',
-            path: '/Projects/Professional',
-        },
-        {
-            name: 'Codecademy Projects',
-            path: 'Projects/Codecademy'
-        },
-        {
-            name: 'Coding With Minecraft Projects',
-            path: '/Projects/CWMinecraft'
-        },
-    ],
-    selectedProjectCategory: null,
-    projects: [
-        {
             id: 'Personal',
             name: 'Personal Projects',
+            path: '/Projects/Personal',
             projects: [
                 {
                     name: 'HTML Cheat Sheet',
@@ -39,10 +21,14 @@ const initialState = {
         },
         {
             id: 'Professional',
+            name: 'Professional Projects',
+            path: '/Projects/Professional',
+            projects: [],
         },
         {
             id: 'Codecademy',
             name: 'Codecademy Projects',
+            path: 'Projects/Codecademy',
             projects: [
                 {
                     name: 'Tea Cozy Landing Page Project',
@@ -89,16 +75,41 @@ const initialState = {
         },
         {
             id:'CWMinecraft',
+            name: 'Coding With Minecraft Projects',
+            path: '/Projects/CWMinecraft',
+            projects: []
         },
     ],
+    selectedProjectCategory: null,
+    selectedProjects: {
+        id: 'Loading',
+        path: 'Loading',
+        name: 'Loading',
+        projects: [],
+    },
 };
 
 export const projectsSlice = createSlice({
     name: 'projectsState',
     initialState,
-    reducers: {},
+    reducers: {
+        setSelectedProjectCategory: (state, action) => {
+            state.selectedProjectCategory = action.payload
+        },
+        setSelectedProjects: (state, action) => {
+            for (let i = 0; i < state.projectCategories.length; i++) {
+                if (state.projectCategories[i].id === action.payload) {
+                    state.selectedProjects = state.projectCategories[i]
+                }
+            }
+        }
+    },
 });
 
-export const selectProjectCategories = (state) => state.projectsState.selectProjectCategories;
+export const {setSelectedProjects} = projectsSlice.actions;
+
+export const selectProjectCategories = (state) => state.projectsState.projectCategories;
+export const selectSelectedProjectCategory = (state) => state.projectsState.selectedProjectCategory;
+export const selectSelectedProjects = (state) => state.projectsState.selectedProjects;
 
 export default projectsSlice.reducer;
