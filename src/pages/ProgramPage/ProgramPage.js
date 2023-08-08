@@ -30,7 +30,7 @@ export default function ProgramPage() {
         <div className="programSpecificsPage" >
             <h2>Program Specifics</h2>
 
-            <img className={ programSpecifics.imageClassName } alt={programSpecifics.name + ' Logo'} src={'../../images/' + programSpecifics.image }  />
+            <img className={ 'specificLogo' } alt={programSpecifics.name + ' Logo'} src={'../../images/' + programSpecifics.image }  />
             <h3> {programSpecifics.name} </h3>
             <h4>Start Date: {programSpecifics.startDate} </h4>
             <h4>Completion Date: {programSpecifics.completionDate} </h4>

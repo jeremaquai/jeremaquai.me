@@ -7,14 +7,17 @@
     min-width: inherit;
     
 }
+.specificLogo {
+    max-width: 80%;
+}
 
-.codecademyLogo {
-    max-width: 100%;
+/* .codecademyLogo {
+    max-width: 80%;
 }
 
 .loganvilleLogo {
     min-width: 100%;
-}
+} */
 
 .certifications {
     display: flex;

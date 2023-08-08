@@ -15,5 +15,5 @@ test('renders a div with the role of sidebar', () => {
         </Provider>
     );
 
-    expect(getByRole(/sidebar/i)).toBeInTheDocument();
+    expect(getByRole(/menubar/i)).toBeInTheDocument();
 });
